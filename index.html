@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>Movie Search</title>
+
+	<!-- Latest Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-center">
+
+	<div class="container ">
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" >
+
+			<!-- Toggle button -->
+	      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+	      	</button>
+
+			<div class="container" >
+
+				<!-- Brand Logo -->
+				<a class="navbar-brand" href="index.html" id="logo">Movie Pedia</a>
+				<!-- Menu -->
+				<div class="navbar-collapse collapse" id="myNavbar">
+
+					<ul class="nav navbar-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Movies</a></li>
+						<li><a href="#">TV Shows</a></li>
+				        <li><a href="#">Latest</a></li>
+				        <li><a href="#">Celebs Photos</a></li>
+				        <li><a href="#">News &amp; Community</a></li> 
+					</ul>
+
+					<form class="navbar-form text-center form-horizontal" id="top_bar">
+						<input type="text" class="form-control" placeholder="Search movie..." id="title">
+						<button type="button" class="btn btn-default" id="srch_btn">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+					
+				</div><!-- Menu Ends -->
+			</div>
+		</nav>
+	</div>
+
+	<h2 id="heading">Search movie result</h2>
+	<div class="container" id="movies">
+		<div class="row">
+			<div class="col-md-2 col-md-offset-1"><h3>Poster</h3></div>
+			<div class="col-md-2"><h3>Title</h3></div>
+			<div class="col-md-2"><h3>Year</h3></div>
+			<div class="col-md-2"><h3>Type</h3></div>
+			<div class="col-md-2"><h3>IMDB Id</h3></div>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest Bootstrap minified Javascript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- My js -->
+	<script src="js/main.js"></script>
+</body>
+</html>
